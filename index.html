@@ -7,150 +7,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/364b2f4b22.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/364b2f4b22.css">
   <title>NetAcademia | Tudástár</title>
 
   <style>
+    html {
+      font-family: 'Open Sans', sans-serif;
+    }
 
-html{
-  font-family: 'Open Sans', sans-serif;
-}
+    .display-5 {
+      color: #ffffff;
+    }
 
-.display-5{
-  color:#fffffcf
-}
+    .lead-2 {
+      font-weight: 400;
+    }
 
-.lead-2{
-  font-weight: 400;
-}
+    .lead-3 {
+      font-weight: 400;
+      font-size: 28px;
+    }
 
-.lead-3{
-  font-weight: 400;
-  font-size: 28px;
-}
+    .card {
+      border: none;
+    }
 
-.card{
-  border:none;
-}
+    footer {
+      font-size: 12px;
+      overflow: hidden;
+      background-color: #232c3d;
+    }
 
-footer{
-  font-size: 12px;
-  overflow:hidden;
-  background-color: #232c3d;
-}
+    footer a {
+      color: #fff;
+    }
 
-footer a {
-color: #fff;
-}
+    footer a:hover {
+      color: #00f0d1;
+    }
 
-footer a:hover {
-color: #00f0d1;
-}
+    .jumbotron {
+      background-image: url(tudastar-bg-2.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 350px;
+      background-position: bottom;
+    }
 
-.jumbotron{
-	background-image: url(tudastar-bg-2.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
-background-position: bottom;
-}
+    .bg-darkblue {
+      background-color: #232c3d;
+      color: #ffffff;
+    }
 
-.bg-darkblue{
-  background-color: #232c3d;
-  color:#ffffff;
-}
+    .btn {
+      position: relative;
+      z-index: 1;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 0;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+    }
 
-.btn{
-  position: relative;
-    z-index: 1;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 0;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-}
+    .btn:focus,
+    .btn:active {
+      outline: 0 !important;
+      box-shadow: none;
+    }
 
-.btn:focus,
-.btn:active {
-	outline: 0 !important;
-	box-shadow: none;
-}
+    .btn:hover {
+      box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16), 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+    }
 
-.btn:hover {
-	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16), 0 3px 12px 0 rgba(0, 0, 0, 0.12);
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
-}
+    .btn-default,
+    .btn-default:hover,
+    .btn-default:focus,
+    .btn-default:active:focus {
+      background: transparent;
+      color: #fff;
+    }
 
-.btn-default,
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active:focus {
-background: transparent;
-	color: #fff;
-}
+    .btn-default.btn-outline {
+      border: 2px solid #00f0d1;
+    }
 
-.btn-default.btn-outline {
-	border: 2px solid #00f0d1;
-}
+    .line {
+      margin: 0 0 1em;
+      line-height: 2em;
+      padding: 0;
+      color: #fff;
+      text-shadow: 1px 1px 1px #000;
+      font-size: 2em;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
 
-.line {
-margin: 0 0 1em;
-line-height: 2em;
-padding: 0;
-color: #fff;
-text-shadow: 1px 1px 1px #000;
-font-size: 2em;
-position: relative;
-overflow: hidden;
-text-align: center;
-}
+    .line:before,
+    .line:after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      margin-left: -999em;
+      height: 2px;
+      width: 998em;
+      border-top: 1px solid #fff;
+      background: rgba(0, 0, 0, 0.2);
+    }
 
-.line:before, .line:after {
-content: " ";
-position: absolute;
-top: 50%;
-margin-left: -999em;
-height: 2px;
-width: 998em;
-border-top: 1px solid #fff;
-background: rgba(0, 0, 0, 0.2);
-}
+    .line:after {
+      left: auto;
+      width: 999em;
+      margin: 0 0 0 1em;
+    }
 
-.line:after {
-left: auto;
-width: 999em;
-margin: 0 0 0 1em;
-}
+    @media (min-width: 1600px) {
+      .footer-container {
+        margin-right: 250px;
+        margin-left: 250px;
+      }
+    }
 
-@media (min-width: 1600px){
-.footer-container{
-  margin-right: 250px;
-  margin-left: 250px;
-}
-}
+    @media (min-width: 1400px) {
+      .footer-container {
+        margin-right: 80px;
+        margin-left: 80px;
+      }
+    }
 
-@media (min-width: 1400px){
-.footer-container{
-  margin-right: 80px;
-  margin-left: 80px;
-}
-}
-
-@media (min-width: 1200px){
-.footer-container{
-  margin-right: 50px;
-  margin-left: 50px;
-}
-}
+    @media (min-width: 1200px) {
+      .footer-container {
+        margin-right: 50px;
+        margin-left: 50px;
+      }
+    }
   </style>
 </head>
 
@@ -166,9 +167,10 @@ margin: 0 0 0 1em;
 
     <div class="row mt-lg-5 pt-lg-5">
       <div class="mx-auto mx-md-0 col-11 pl-0">
-        <p class="lead">Vannak feladatok, problémák, amikre egy ötperces videó hathatósabb megoldást nyújt, mint egy negyvenórás tanfolyam. <br>Új előadássorozatunkban nem a világegyetem titkait akarjuk felfedni, csupán azokra a kérdésekre adunk választ, melyekre nap mint
-          nap emberek százai keresik a megoldást.</p>
-          <p class="lead lead-2">A NetAcademia Tudástár exkluzív tartalmából az első hat videó ingyenesen megtekinthető Július 2-ig.</p>
+        <p class="lead">Vannak feladatok, problémák, amikre egy ötperces videó hathatósabb megoldást nyújt, mint egy negyvenórás tanfolyam.
+          <br>Új előadássorozatunkban nem a világegyetem titkait akarjuk felfedni, csupán azokra a kérdésekre adunk választ,
+          melyekre nap mint nap emberek százai keresik a megoldást.</p>
+        <p class="lead lead-2">A NetAcademia Tudástár exkluzív tartalmából az első hat videó ingyenesen megtekinthető Július 2-ig.</p>
       </div>
     </div>
 
@@ -186,7 +188,8 @@ margin: 0 0 0 1em;
       </div>
       <div class="mx-auto mx-md-0 col-12 col-lg-7 my-auto">
         <h3 class="mt-4 mt-lg-0 mb-4">Feltörték a jelszavamat?</h3>
-        <p>Hány jelszót használsz? Ötöt? Tizet? Szerinted ellopták már valamelyiket? Bemutatjuk, hogyan tudod ellenőrizni, hogy a jelszavadat feltörték-e, és azt is, hogy tudod megvédeni magad a támadásoktól.</p>
+        <p>Hány jelszót használsz? Ötöt? Tizet? Szerinted ellopták már valamelyiket? Bemutatjuk, hogyan tudod ellenőrizni, hogy
+          a jelszavadat feltörték-e, és azt is, hogy tudod megvédeni magad a támadásoktól.</p>
       </div>
     </div>
 
@@ -195,117 +198,131 @@ margin: 0 0 0 1em;
       <div class="col-12 my-3 my-lg-0 col-lg-4">
         <div class="card">
           <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276470930" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276470930" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5>Szoftvertelepítés egy paranccsal</h5>
+            <p class="card-text">Bemutatjuk, hogyan tudsz szoftvereket telepíteni egy egyszerű paranccsal.</p>
+          </div>
         </div>
-        <div class="card-body">
-          <h5>Szoftvertelepítés egy paranccsal</h5>
-          <p class="card-text">Bemutatjuk, hogyan tudsz szoftvereket telepíteni egy egyszerű paranccsal.</p>
-        </div>
-      </div>
       </div>
 
       <div class="col-12 col-lg-4 my-3 my-lg-0">
         <div class="card">
           <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276466769" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276466769" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5>Domain regisztráció</h5>
+            <p class="card-text">Bemutatjuk, hogyan tudsz egy új domaint regisztrálni magadnak vagy cégednek.</p>
+          </div>
         </div>
-        <div class="card-body">
-          <h5>Domain regisztráció</h5>
-          <p class="card-text">Bemutatjuk, hogyan tudsz egy új domaint regisztrálni magadnak vagy cégednek.</p>
-        </div>
-      </div>
       </div>
 
       <div class="col-12 col-lg-4 my-3 my-lg-0">
         <div class="card">
           <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276470061" allowfullscreen></iframe>
-        </div>
-        <div class="card-body">
-          <h5>Új domain beállítása</h5>
-          <p class="card-text">Bemutatjuk, hogyan tudsz egy újonnan regisztrált domaint megfelelően beállítani.</p>
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276470061" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5>Új domain beállítása</h5>
+            <p class="card-text">Bemutatjuk, hogyan tudsz egy újonnan regisztrált domaint megfelelően beállítani.</p>
+          </div>
         </div>
       </div>
+
+    </div>
+  </div>
+  <!--row end-->
+  </div>
+  <!--conteiner end-->
+
+  <section class="bg-darkblue py-5 my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <p class="lead mb-4">A NetAcademia Tudástár videói július 2 után már csak előfizetőink számára lesznek elérhetőek. Fizess elő még ma!</p>
+          <button type="button" class="btn btn-default btn-outline">Megveszem</button>
+        </div>
       </div>
+    </div>
+  </section>
 
-    </div></div> <!--row end-->
-</div> <!--conteiner end-->
-
-<section class="bg-darkblue py-5 my-5">
   <div class="container">
-    <div class="row">
-      <div class="col text-center">
-      <p class="lead mb-4">A NetAcademia Tudástár videói július 2 után már csak előfizetőink számára lesznek elérhetőek. Fizess elő még ma!</p>
-      <button type="button" class="btn btn-default btn-outline">Megveszem</button>
-      </div>
-    </div>
-    </div>
-</section>
-
-<div class="container">
     <div class="row py-5">
 
       <div class="col-12 col-lg-4 my-3 my-md-0">
         <div class="card">
           <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276470768" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276470768" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5>Projekt függőségek</h5>
+            <p class="card-text">Bemutatjuk, hogyan tudod egy projekt függőségeit megfelelően beállítani.</p>
+          </div>
         </div>
-        <div class="card-body">
-          <h5>Projekt függőségek</h5>
-          <p class="card-text">Bemutatjuk, hogyan tudod egy projekt függőségeit megfelelően beállítani.</p>
-        </div>
-      </div>
       </div>
 
       <div class="col-12 col-lg-4 my-3 my-md-0">
         <div class="card">
           <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276468793" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276468793" allowfullscreen></iframe>
+          </div>
+          <div class="card-body my-3 my-md-0">
+            <h5>WordPress sablon készítés</h5>
+            <p class="card-text">Bemutatjuk, hogyan tudsz saját sablont készíteni egy WordPress oldalhoz.</p>
+          </div>
         </div>
-        <div class="card-body my-3 my-md-0">
-          <h5>WordPress sablon készítés</h5>
-          <p class="card-text">Bemutatjuk, hogyan tudsz saját sablont készíteni egy WordPress oldalhoz.</p>
-        </div>
-      </div>
       </div>
 
       <div class="col-12 col-lg-4 my-3 my-md-0">
         <div class="card">
           <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276469491" allowfullscreen></iframe>
-        </div>
-        <div class="card-body">
-          <h5>Bárhol a világon</h5>
-          <p class="card-text">Bemutatjuk, hogyan tudod a földrajzi helyedet megváltoztatni a digitális világban.</p>
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/276469491" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5>Bárhol a világon</h5>
+            <p class="card-text">Bemutatjuk, hogyan tudod a földrajzi helyedet megváltoztatni a digitális világban.</p>
+          </div>
         </div>
       </div>
-      </div>
 
-    </div>  <!--row end-->
-  </div> <!--container end-->
-
-<section class="bg-light py-5 mt-5">
-  <div class="container">
-    <div class="row my-5 justify-content-center">
-
-      <div class="col-8">
-        <p class="mb-4">Nem kaptál választ egy kérdésedre vagy nem találtál megoldást egy problémára? Írd meg nekünk és mi igyekszünk a tudástárat ezalapján bővíteni!</p>
-
-        <form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Hogyan szólíthatunk?</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Név">
+    </div>
+    <!--row end-->
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Ide írd a kérdésedet!</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary mb-2 mt-3">Kérdezek!</button>
-</form>
+  <!--container end-->
+
+  <section class="bg-light py-5 mt-5">
+    <div class="container">
+      <div class="row my-5 justify-content-center">
+
+        <div class="col-8" id="subscribeWrapper">
+          <p class="mb-4">Nem kaptál választ egy kérdésedre vagy nem találtál megoldást egy problémára? Írd meg nekünk és mi igyekszünk a
+            tudástárat ezalapján bővíteni!</p>
+
+          <form id="subscribeForm" class="mb-4">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Hogyan szólíthatunk?</label>
+              <input type="text" class="form-control" name="hogyan_szolithatunk" id="hogyan_szolithatunk" placeholder="Név">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Ide írd a kérdésedet!</label>
+              <textarea class="form-control" name="ide_ird_a_kerdesed" id="ide_ird_a_kerdesed" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 mt-3">Kérdezek!</button>
+          </form>
+          
+          <div class="alert alert-success" style="display: none;" role="alert">
+            Sikeresen elküldted a kérdésed!
+          </div>
+          <div class="alert alert-danger" style="display: none;" srole="alert">
+            A beküldés valamiért nem sikerült, jelezz nekünk itt: 
+            <a href="mailto:iroda@necatacemia.hu">iroda@necatacemia.hu</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <footer class="pt-5 text-light">
     <div class="container-fluid footer-container">
@@ -313,7 +330,9 @@ margin: 0 0 0 1em;
       <div class="row py-3 mx-auto justify-content-center text-uppercase font-weight-bold">
 
         <div class="col-12 col-sm-6 col-lg-3 my-auto ">
-          <a href="https://www.netacademia.hu/"><img src="logo.svg" alt="logo" width="220" class="lg-px-3"></a>
+          <a href="https://www.netacademia.hu/">
+            <img src="logo.svg" alt="logo" width="220" class="lg-px-3">
+          </a>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
@@ -326,17 +345,29 @@ margin: 0 0 0 1em;
 
         <div class="col-12 col-sm-6 col-lg-3">
           <ul class="list-unstyled">
-            <li class="py-1"><a href="https://www.netacademia.hu/">Főoldal</a></li>
-            <li class="py-1"><a href="https://app.netacademia.hu/tanfolyamkeresov2">Tanfolyamkereső</a></li>
-            <li class="py-1"><a href="https://app.netacademia.hu/indulotanfolyamok">Induló tanfolyamok</a></li>
+            <li class="py-1">
+              <a href="https://www.netacademia.hu/">Főoldal</a>
+            </li>
+            <li class="py-1">
+              <a href="https://app.netacademia.hu/tanfolyamkeresov2">Tanfolyamkereső</a>
+            </li>
+            <li class="py-1">
+              <a href="https://app.netacademia.hu/indulotanfolyamok">Induló tanfolyamok</a>
+            </li>
           </ul>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
           <ul class="list-unstyled">
-            <li class="py-1"><a href="https://app.netacademia.hu/elofizetes">Előfizetés</a></li>
-            <li class="py-1"><a href="https://app.netacademia.hu/certificate">NetAcademia Certificate</a></li>
-            <li class="py-1"><a href="https://app.netacademia.hu/lenyugozo-tanfolyamok">Lenyűgöző tanfolyamok</a></li>
+            <li class="py-1">
+              <a href="https://app.netacademia.hu/elofizetes">Előfizetés</a>
+            </li>
+            <li class="py-1">
+              <a href="https://app.netacademia.hu/certificate">NetAcademia Certificate</a>
+            </li>
+            <li class="py-1">
+              <a href="https://app.netacademia.hu/lenyugozo-tanfolyamok">Lenyűgöző tanfolyamok</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -345,11 +376,21 @@ margin: 0 0 0 1em;
     <div class="container-fluid">
       <h1 class="line">BARÁTKOZZUNK!</h1>
       <div class="text-center px-0">
-        <a class="px-3" href="https://www.facebook.com/Netacademia/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-        <a class="px-3" href="https://twitter.com/netacademia"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-        <a class="px-3" href="https://www.instagram.com/netacademia.hu/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-        <a class="px-3" href="https://www.linkedin.com/company/netacademia/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-        <a class="px-3" href="https://www.youtube.com/user/Trombita45"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+        <a class="px-3" href="https://www.facebook.com/Netacademia/">
+          <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        </a>
+        <a class="px-3" href="https://twitter.com/netacademia">
+          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        </a>
+        <a class="px-3" href="https://www.instagram.com/netacademia.hu/">
+          <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
+        <a class="px-3" href="https://www.linkedin.com/company/netacademia/">
+          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+        </a>
+        <a class="px-3" href="https://www.youtube.com/user/Trombita45">
+          <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
 
@@ -366,9 +407,14 @@ margin: 0 0 0 1em;
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script src="./scripts.js"></script>
 </body>
 
 </html>

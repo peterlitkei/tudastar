@@ -28,6 +28,8 @@ $('#subscribeForm button[type="submit"]').click(function(event) {
     })
         .done(function() {
             $successAlert.show();
+            $nameField.val('');
+            $questionField.val('');
         })
         .fail(function() {
             $failAlert.show();
